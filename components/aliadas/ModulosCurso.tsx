@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const modules = [
   {
     number: "01",
-    accentColor: "#7C3AED",
+    accentColor: "#C9A227",
     title: "Violência Doméstica: Uma Visão Geral",
     topics: [
       "O que caracteriza violência doméstica",
@@ -15,7 +15,7 @@ const modules = [
   },
   {
     number: "02",
-    accentColor: "#6D28D9",
+    accentColor: "#B8960C",
     title: "Violência Física e Sexual",
     topics: [
       "Como identificar os sinais",
@@ -25,7 +25,7 @@ const modules = [
   },
   {
     number: "03",
-    accentColor: "#9333EA",
+    accentColor: "#D4AF37",
     title: "Violência Psicológica",
     topics: [
       "O abuso invisível",
@@ -35,7 +35,7 @@ const modules = [
   },
   {
     number: "04",
-    accentColor: "#A21CAF",
+    accentColor: "#E8C84A",
     title: "Violência Moral e Vicária",
     topics: [
       "Calúnia, difamação e injúria",
@@ -45,7 +45,7 @@ const modules = [
   },
   {
     number: "05",
-    accentColor: "#BE185D",
+    accentColor: "#C9A227",
     title: "O Que Fazer em Situação de Risco",
     topics: [
       "Passo a passo para denunciar",
@@ -55,7 +55,7 @@ const modules = [
   },
   {
     number: "06",
-    accentColor: "#DB2777",
+    accentColor: "#D4AF37",
     title: "Tornando-se uma Aliada",
     topics: [
       "Como ajudar outra mulher com segurança",
@@ -67,7 +67,7 @@ const modules = [
 
 export default function ModulosCurso() {
   return (
-    <section id="modulos" className="py-28 overflow-hidden" style={{ background: "#0F0421" }}>
+    <section id="modulos" className="py-28 overflow-hidden" style={{ background: "#0D0D0D" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <motion.div
@@ -77,7 +77,7 @@ export default function ModulosCurso() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <span className="text-violet-400 text-xs font-sans font-semibold tracking-[0.22em] uppercase">
+          <span className="text-xs font-sans font-semibold tracking-[0.22em] uppercase" style={{ color: "#C9A227" }}>
             Conteúdo do curso
           </span>
           <h2
@@ -87,7 +87,7 @@ export default function ModulosCurso() {
             O que você vai{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #C4B5FD 0%, #F472B6 100%)",
+                background: "linear-gradient(135deg, #C9A227 0%, #E8C84A 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",

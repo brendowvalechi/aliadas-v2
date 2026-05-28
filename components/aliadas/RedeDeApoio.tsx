@@ -46,9 +46,7 @@ export default function RedeDeApoio() {
   return (
     <section
       className="py-28 overflow-hidden relative"
-      style={{
-        background: "linear-gradient(135deg, #1C0845 0%, #4C1D95 55%, #6B21A8 100%)",
-      }}
+      style={{ background: "#111111" }}
     >
       {/* Ambient orbs */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -57,7 +55,7 @@ export default function RedeDeApoio() {
           style={{
             top: "-20%",
             right: "-15%",
-            background: "radial-gradient(circle, rgba(236,72,153,0.18) 0%, transparent 65%)",
+            background: "radial-gradient(circle, rgba(201,162,39,0.07) 0%, transparent 65%)",
             filter: "blur(80px)",
           }}
         />
@@ -66,7 +64,7 @@ export default function RedeDeApoio() {
           style={{
             bottom: "-20%",
             left: "-10%",
-            background: "radial-gradient(circle, rgba(109,40,217,0.25) 0%, transparent 65%)",
+            background: "radial-gradient(circle, rgba(201,162,39,0.05) 0%, transparent 65%)",
             filter: "blur(80px)",
           }}
         />
@@ -81,7 +79,7 @@ export default function RedeDeApoio() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <span className="text-violet-300 text-xs font-sans font-semibold tracking-[0.22em] uppercase">
+          <span className="text-xs font-sans font-semibold tracking-[0.22em] uppercase" style={{ color: "#C9A227" }}>
             Rede de suporte
           </span>
           <h2
@@ -113,7 +111,7 @@ export default function RedeDeApoio() {
                 className="font-display font-black leading-none mb-1"
                 style={{
                   fontSize: "clamp(2.25rem, 5vw, 3.75rem)",
-                  background: "linear-gradient(135deg, #C4B5FD 0%, #F472B6 100%)",
+                  background: "linear-gradient(135deg, #C9A227 0%, #E8C84A 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -149,8 +147,8 @@ export default function RedeDeApoio() {
               }}
             >
               <div
-                className="w-10 h-10 rounded-xl flex items-center justify-center mb-4 text-white"
-                style={{ background: "rgba(196,181,253,0.15)" }}
+                className="w-10 h-10 rounded-xl flex items-center justify-center mb-4"
+                style={{ background: "rgba(201,162,39,0.15)", color: "#C9A227" }}
               >
                 {s.icon}
               </div>

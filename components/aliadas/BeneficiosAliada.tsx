@@ -43,7 +43,7 @@ const perks = [
 
 export default function BeneficiosAliada() {
   return (
-    <section className="py-28 overflow-hidden relative" style={{ background: "#0A0219" }}>
+    <section className="py-28 overflow-hidden relative" style={{ background: "#0D0D0D" }}>
 
       {/* Ambient glow */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -53,7 +53,7 @@ export default function BeneficiosAliada() {
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            background: "radial-gradient(circle, rgba(124,58,237,0.14) 0%, transparent 65%)",
+            background: "radial-gradient(circle, rgba(201,162,39,0.08) 0%, transparent 65%)",
             filter: "blur(80px)",
           }}
         />
@@ -69,7 +69,7 @@ export default function BeneficiosAliada() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <span className="text-violet-400 text-xs font-sans font-semibold tracking-[0.22em] uppercase">
+          <span className="text-xs font-sans font-semibold tracking-[0.22em] uppercase" style={{ color: "#C9A227" }}>
             Exclusivo para Aliadas
           </span>
           <h2
@@ -80,7 +80,7 @@ export default function BeneficiosAliada() {
             <br className="hidden sm:block" />
             <span
               style={{
-                background: "linear-gradient(135deg, #C4B5FD 0%, #F472B6 100%)",
+                background: "linear-gradient(135deg, #C9A227 0%, #E8C84A 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -119,8 +119,8 @@ export default function BeneficiosAliada() {
               <div
                 className="absolute top-0 left-0 right-0 h-[2px] rounded-t-2xl"
                 style={{
-                  background: "linear-gradient(to right, #7C3AED, #DB2777)",
-                  opacity: 0.7,
+                  background: "linear-gradient(to right, #C9A227, #E8C84A)",
+                  opacity: 0.8,
                 }}
               />
 
@@ -128,7 +128,7 @@ export default function BeneficiosAliada() {
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-2xl"
                 style={{
-                  background: "radial-gradient(ellipse at top, rgba(124,58,237,0.12) 0%, transparent 60%)",
+                  background: "radial-gradient(ellipse at top, rgba(201,162,39,0.1) 0%, transparent 60%)",
                 }}
               />
 
@@ -137,16 +137,16 @@ export default function BeneficiosAliada() {
                 <span
                   className="inline-flex items-center px-3 py-1 rounded-full font-sans text-[11px] font-semibold tracking-wider uppercase"
                   style={{
-                    background: "rgba(124,58,237,0.18)",
-                    color: "#C4B5FD",
-                    border: "1px solid rgba(196,181,253,0.2)",
+                    background: "rgba(201,162,39,0.15)",
+                    color: "#C9A227",
+                    border: "1px solid rgba(201,162,39,0.25)",
                   }}
                 >
                   {perk.tag}
                 </span>
                 <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center text-white flex-shrink-0"
-                  style={{ background: "linear-gradient(135deg, #7C3AED, #DB2777)" }}
+                  className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style={{ background: "linear-gradient(135deg, #C9A227, #E8C84A)", color: "#111111" }}
                 >
                   {perk.icon}
                 </div>
@@ -165,9 +165,9 @@ export default function BeneficiosAliada() {
                 <div className="mt-6 flex items-center gap-2.5">
                   <div
                     className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-                    style={{ background: "linear-gradient(135deg, #A78BFA, #F472B6)" }}
+                    style={{ background: "#C9A227" }}
                   />
-                  <span className="font-sans text-xs font-medium" style={{ color: "rgba(196,181,253,0.8)" }}>
+                  <span className="font-sans text-xs font-medium" style={{ color: "rgba(201,162,39,0.85)" }}>
                     {perk.highlight}
                   </span>
                 </div>
@@ -186,10 +186,11 @@ export default function BeneficiosAliada() {
         >
           <a
             href="#inscricao"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-sans font-semibold text-white text-base transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
+            className="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-sans font-semibold text-base transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
             style={{
-              background: "linear-gradient(135deg, #7C3AED 0%, #DB2777 100%)",
-              boxShadow: "0 0 48px rgba(124,58,237,0.38), 0 4px 20px rgba(219,39,119,0.2)",
+              background: "linear-gradient(135deg, #C9A227 0%, #E8C84A 100%)",
+              color: "#111111",
+              boxShadow: "0 0 48px rgba(201,162,39,0.35), 0 4px 20px rgba(201,162,39,0.2)",
             }}
           >
             Quero esses benefícios

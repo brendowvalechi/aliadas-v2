@@ -47,7 +47,7 @@ const features = [
 
 export default function SobrePrograma() {
   return (
-    <section id="sobre" className="py-28 overflow-hidden" style={{ background: "#F5F3FF" }}>
+    <section id="sobre" className="py-28 overflow-hidden" style={{ background: "#FFFFFF" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <motion.div
@@ -57,17 +57,17 @@ export default function SobrePrograma() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <span className="text-violet-600 text-xs font-sans font-semibold tracking-[0.22em] uppercase">
+          <span className="text-xs font-sans font-semibold tracking-[0.22em] uppercase" style={{ color: "#888888" }}>
             Sobre o programa
           </span>
           <h2
             className="font-display font-bold mt-3"
-            style={{ fontSize: "clamp(2.25rem, 5vw, 3.5rem)", color: "#2E1065" }}
+            style={{ fontSize: "clamp(2.25rem, 5vw, 3.5rem)", color: "#111111" }}
           >
             O que é o{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #7C3AED 0%, #DB2777 100%)",
+                background: "linear-gradient(135deg, #C9A227 0%, #E8C84A 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -90,36 +90,36 @@ export default function SobrePrograma() {
             className="flex justify-center order-2 lg:order-1"
           >
             <div className="relative w-72 h-72 md:w-[26rem] md:h-[26rem]">
-              <div className="absolute inset-0 rounded-full" style={{ border: "1px solid rgba(124,58,237,0.25)" }} />
-              <div className="absolute inset-8 rounded-full" style={{ border: "1px solid rgba(124,58,237,0.18)" }} />
-              <div className="absolute inset-16 rounded-full" style={{ border: "1px solid rgba(124,58,237,0.14)" }} />
-              <div className="absolute inset-0 rounded-full" style={{ border: "1.5px dashed rgba(167,139,250,0.2)" }} />
+              <div className="absolute inset-0 rounded-full" style={{ border: "1px solid rgba(201,162,39,0.25)" }} />
+              <div className="absolute inset-8 rounded-full" style={{ border: "1px solid rgba(201,162,39,0.18)" }} />
+              <div className="absolute inset-16 rounded-full" style={{ border: "1px solid rgba(201,162,39,0.14)" }} />
+              <div className="absolute inset-0 rounded-full" style={{ border: "1.5px dashed rgba(201,162,39,0.2)" }} />
               <div
                 className="absolute inset-0 rounded-full pointer-events-none"
-                style={{ background: "radial-gradient(circle, rgba(124,58,237,0.1) 0%, transparent 68%)" }}
+                style={{ background: "radial-gradient(circle, rgba(201,162,39,0.06) 0%, transparent 68%)" }}
               />
               <div
                 className="absolute inset-24 rounded-full flex flex-col items-center justify-center shadow-2xl"
-                style={{ background: "linear-gradient(135deg, #6D28D9 0%, #BE185D 100%)" }}
+                style={{ background: "linear-gradient(135deg, #111111 0%, #2A2A2A 100%)", border: "2px solid #C9A227" }}
               >
-                <span className="text-white font-display font-black text-lg tracking-widest leading-tight">
+                <span className="font-display font-black text-lg tracking-widest leading-tight" style={{ color: "#C9A227" }}>
                   ALIADAS
                 </span>
-                <span className="text-white/65 text-[9px] font-sans tracking-wider mt-1 uppercase">
+                <span className="text-[9px] font-sans tracking-wider mt-1 uppercase" style={{ color: "rgba(201,162,39,0.6)" }}>
                   Dra. Lia Valechi
                 </span>
               </div>
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full px-3.5 py-1.5 shadow-md" style={{ border: "1px solid #EDE9FE" }}>
-                <span className="text-violet-700 text-xs font-sans font-semibold">100% Gratuito</span>
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full px-3.5 py-1.5 shadow-md" style={{ border: "1px solid #E8D5A0" }}>
+                <span className="text-xs font-sans font-semibold" style={{ color: "#C9A227" }}>100% Gratuito</span>
               </div>
-              <div className="absolute top-1/2 -right-3 -translate-y-1/2 bg-white rounded-full px-3.5 py-1.5 shadow-md" style={{ border: "1px solid #EDE9FE" }}>
-                <span className="text-violet-700 text-xs font-sans font-semibold">Online</span>
+              <div className="absolute top-1/2 -right-3 -translate-y-1/2 bg-white rounded-full px-3.5 py-1.5 shadow-md" style={{ border: "1px solid #E8D5A0" }}>
+                <span className="text-xs font-sans font-semibold" style={{ color: "#C9A227" }}>Online</span>
               </div>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-white rounded-full px-3.5 py-1.5 shadow-md" style={{ border: "1px solid #EDE9FE" }}>
-                <span className="text-pink-600 text-xs font-sans font-semibold">Certificado</span>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-white rounded-full px-3.5 py-1.5 shadow-md" style={{ border: "1px solid #E8D5A0" }}>
+                <span className="text-xs font-sans font-semibold" style={{ color: "#C9A227" }}>Certificado</span>
               </div>
-              <div className="absolute top-1/2 -left-3 -translate-y-1/2 bg-white rounded-full px-3.5 py-1.5 shadow-md" style={{ border: "1px solid #EDE9FE" }}>
-                <span className="text-violet-700 text-xs font-sans font-semibold">6 Módulos</span>
+              <div className="absolute top-1/2 -left-3 -translate-y-1/2 bg-white rounded-full px-3.5 py-1.5 shadow-md" style={{ border: "1px solid #E8D5A0" }}>
+                <span className="text-xs font-sans font-semibold" style={{ color: "#C9A227" }}>6 Módulos</span>
               </div>
             </div>
           </motion.div>
@@ -132,15 +132,15 @@ export default function SobrePrograma() {
             transition={{ duration: 0.7 }}
             className="order-1 lg:order-2"
           >
-            <p className="font-sans text-lg leading-relaxed mb-5" style={{ color: "rgba(76,29,149,0.85)" }}>
-              O <strong style={{ color: "#4C1D95" }}>Aliadas</strong> é uma iniciativa
+            <p className="font-sans text-lg leading-relaxed mb-5" style={{ color: "#333333" }}>
+              O <strong style={{ color: "#111111" }}>Aliadas</strong> é uma iniciativa
               educacional criada pela Delegada Lia Valechi com o objetivo de capacitar mulheres
               para atuarem como multiplicadoras no combate à violência doméstica.
             </p>
-            <p className="font-sans text-base leading-relaxed mb-10" style={{ color: "rgba(91,33,182,0.72)" }}>
+            <p className="font-sans text-base leading-relaxed mb-10" style={{ color: "#555555" }}>
               Funciona como um minicurso online gratuito em formato de videoaulas. Ao concluir
               os módulos, a participante recebe o certificado de{" "}
-              <strong style={{ color: "#7C3AED" }}>&ldquo;Aliada&rdquo;</strong> — tornando-se
+              <strong style={{ color: "#C9A227" }}>&ldquo;Aliada&rdquo;</strong> — tornando-se
               uma representante apta a levar informação e o nome do projeto por Minas Gerais
               e por todo o Brasil.
             </p>

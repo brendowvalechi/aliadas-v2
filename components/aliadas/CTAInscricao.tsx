@@ -34,7 +34,7 @@ export default function CTAInscricao() {
     <section
       id="inscricao"
       className="py-28 relative overflow-hidden"
-      style={{ background: "#120729" }}
+      style={{ background: "#0D0D0D" }}
     >
       {/* Orbs */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -43,7 +43,7 @@ export default function CTAInscricao() {
           style={{
             top: "-10%",
             left: "20%",
-            background: "radial-gradient(circle, rgba(124,58,237,0.32) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(201,162,39,0.08) 0%, transparent 70%)",
             filter: "blur(64px)",
           }}
         />
@@ -52,7 +52,7 @@ export default function CTAInscricao() {
           style={{
             bottom: "-10%",
             right: "20%",
-            background: "radial-gradient(circle, rgba(219,39,119,0.28) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(201,162,39,0.06) 0%, transparent 70%)",
             filter: "blur(64px)",
           }}
         />
@@ -85,7 +85,7 @@ export default function CTAInscricao() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <span className="text-violet-400 text-xs font-sans font-semibold tracking-[0.22em] uppercase">
+          <span className="text-xs font-sans font-semibold tracking-[0.22em] uppercase" style={{ color: "#C9A227" }}>
             Comece agora
           </span>
           <h2
@@ -95,7 +95,7 @@ export default function CTAInscricao() {
             Quero ser uma{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #C4B5FD 0%, #F472B6 100%)",
+                background: "linear-gradient(135deg, #C9A227 0%, #E8C84A 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -129,9 +129,9 @@ export default function CTAInscricao() {
             >
               <div
                 className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5"
-                style={{ background: "linear-gradient(135deg, #7C3AED, #DB2777)" }}
+                style={{ background: "linear-gradient(135deg, #C9A227, #E8C84A)" }}
               >
-                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-8 h-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
@@ -156,7 +156,7 @@ export default function CTAInscricao() {
                   style={{
                     background: "rgba(255,255,255,0.07)",
                     border: "1px solid rgba(255,255,255,0.12)",
-                    caretColor: "#C4B5FD",
+                    caretColor: "#C9A227",
                   }}
                 />
                 <input
@@ -170,7 +170,7 @@ export default function CTAInscricao() {
                   style={{
                     background: "rgba(255,255,255,0.07)",
                     border: "1px solid rgba(255,255,255,0.12)",
-                    caretColor: "#C4B5FD",
+                    caretColor: "#C9A227",
                   }}
                 />
               </div>
@@ -178,10 +178,11 @@ export default function CTAInscricao() {
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="w-full py-4 rounded-xl font-sans font-semibold text-white text-base transition-all duration-300 hover:scale-[1.01] active:scale-[0.99] disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full py-4 rounded-xl font-sans font-semibold text-base transition-all duration-300 hover:scale-[1.01] active:scale-[0.99] disabled:opacity-70 disabled:cursor-not-allowed"
                 style={{
-                  background: "linear-gradient(135deg, #7C3AED 0%, #DB2777 100%)",
-                  boxShadow: "0 0 48px rgba(124,58,237,0.42), 0 4px 20px rgba(219,39,119,0.22)",
+                  background: "linear-gradient(135deg, #C9A227 0%, #E8C84A 100%)",
+                  color: "#111111",
+                  boxShadow: "0 0 48px rgba(201,162,39,0.35), 0 4px 20px rgba(201,162,39,0.2)",
                 }}
               >
                 {status === "loading" ? "Enviando..." : "Quero ser uma Aliada →"}
@@ -192,7 +193,7 @@ export default function CTAInscricao() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   className="font-sans text-sm text-center"
-                  style={{ color: "#F472B6" }}
+                  style={{ color: "#EF4444" }}
                 >
                   Ops! Algo deu errado. Por favor, tente novamente.
                 </motion.p>

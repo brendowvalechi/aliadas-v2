@@ -63,16 +63,16 @@ export default function ComoFunciona() {
           transition={{ duration: 0.6 }}
           className="text-center mb-24"
         >
-          <span className="text-violet-600 text-xs font-sans font-semibold tracking-[0.22em] uppercase">
+          <span className="text-xs font-sans font-semibold tracking-[0.22em] uppercase" style={{ color: "#888888" }}>
             Simples assim
           </span>
           <h2
             className="font-display font-bold mt-3"
-            style={{ fontSize: "clamp(2.25rem, 5vw, 3.5rem)", color: "#2E1065" }}
+            style={{ fontSize: "clamp(2.25rem, 5vw, 3.5rem)", color: "#111111" }}
           >
             Como funciona?
           </h2>
-          <p className="font-sans mt-4 max-w-md mx-auto text-base leading-relaxed" style={{ color: "rgba(91,33,182,0.6)" }}>
+          <p className="font-sans mt-4 max-w-md mx-auto text-base leading-relaxed" style={{ color: "#555555" }}>
             Em poucos passos, você vai da inscrição ao certificado de Aliada.
           </p>
         </motion.div>
@@ -86,7 +86,7 @@ export default function ComoFunciona() {
               viewport={{ once: true }}
               transition={{ duration: 1.4, delay: 0.3, ease: "easeInOut" }}
               className="w-full h-full origin-left"
-              style={{ background: "linear-gradient(to right, #7C3AED 0%, #DB2777 100%)" }}
+              style={{ background: "linear-gradient(to right, #C9A227 0%, #E8C84A 100%)" }}
             />
           </div>
 
@@ -102,7 +102,7 @@ export default function ComoFunciona() {
               <div
                 className="absolute -top-5 font-display font-black leading-none select-none pointer-events-none"
                 aria-hidden="true"
-                style={{ fontSize: "5.5rem", color: "#EDE9FE", zIndex: 0, left: "50%", transform: "translateX(-50%)" }}
+                style={{ fontSize: "5.5rem", color: "#F0F0F0", zIndex: 0, left: "50%", transform: "translateX(-50%)" }}
               >
                 {step.number}
               </div>
@@ -111,16 +111,17 @@ export default function ComoFunciona() {
                 className="relative z-10 w-28 h-28 rounded-full flex items-center justify-center mb-6 text-white"
                 style={{
                   background: "linear-gradient(135deg, #7C3AED 0%, #DB2777 100%)",
-                  boxShadow: "0 8px 36px rgba(124,58,237,0.32)",
+                  border: "2.5px solid #C9A227",
+                  boxShadow: "0 8px 36px rgba(201,162,39,0.2)",
                 }}
               >
                 {step.icon}
               </div>
 
-              <h3 className="font-display font-bold text-xl mb-3 relative z-10" style={{ color: "#2E1065" }}>
+              <h3 className="font-display font-bold text-xl mb-3 relative z-10" style={{ color: "#111111" }}>
                 {step.title}
               </h3>
-              <p className="font-sans text-sm leading-relaxed max-w-[220px]" style={{ color: "rgba(91,33,182,0.68)" }}>
+              <p className="font-sans text-sm leading-relaxed max-w-[220px]" style={{ color: "#555555" }}>
                 {step.desc}
               </p>
             </motion.div>

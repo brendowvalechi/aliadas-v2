@@ -27,7 +27,7 @@ const benefits = [
 
 export default function Certificacao() {
   return (
-    <section id="certificado" className="py-28 overflow-hidden" style={{ background: "#FAFAFA" }}>
+    <section id="certificado" className="py-28 overflow-hidden" style={{ background: "#FFFFFF" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <motion.div
@@ -37,17 +37,17 @@ export default function Certificacao() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <span className="text-violet-600 text-xs font-sans font-semibold tracking-[0.22em] uppercase">
+          <span className="text-xs font-sans font-semibold tracking-[0.22em] uppercase" style={{ color: "#888888" }}>
             Reconhecimento
           </span>
           <h2
             className="font-display font-bold mt-3"
-            style={{ fontSize: "clamp(2.25rem, 5vw, 3.5rem)", color: "#2E1065" }}
+            style={{ fontSize: "clamp(2.25rem, 5vw, 3.5rem)", color: "#111111" }}
           >
             O certificado de{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #7C3AED 0%, #DB2777 100%)",
+                background: "linear-gradient(135deg, #C9A227 0%, #E8C84A 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -58,7 +58,7 @@ export default function Certificacao() {
           </h2>
           <p
             className="font-sans mt-4 max-w-md mx-auto text-base leading-relaxed"
-            style={{ color: "rgba(91,33,182,0.6)" }}
+            style={{ color: "#555555" }}
           >
             Muito mais do que um documento — uma chancela de comprometimento com a causa.
           </p>
@@ -80,42 +80,42 @@ export default function Certificacao() {
                 background: "white",
                 borderRadius: "20px",
                 padding: "44px 40px 36px",
-                boxShadow: "0 28px 72px rgba(124,58,237,0.2), 0 4px 20px rgba(0,0,0,0.07)",
-                border: "1px solid #EDE9FE",
+                boxShadow: "0 28px 72px rgba(201,162,39,0.15), 0 4px 20px rgba(0,0,0,0.07)",
+                border: "1px solid #E8D5A0",
               }}
             >
               {/* Inner border frame */}
               <div
                 className="absolute inset-3 rounded-2xl pointer-events-none"
-                style={{ border: "1px solid #DDD6FE" }}
+                style={{ border: "1px solid #E8D5A0" }}
               />
 
               {/* Top gradient accent */}
               <div
                 className="absolute top-0 left-10 right-10 h-1 rounded-b-full"
-                style={{ background: "linear-gradient(to right, #7C3AED, #DB2777)" }}
+                style={{ background: "linear-gradient(to right, #C9A227, #E8C84A)" }}
               />
 
               {/* Header */}
               <div className="text-center mb-7">
                 <div
                   className="inline-flex items-center justify-center w-12 h-12 rounded-full mb-3"
-                  style={{ background: "linear-gradient(135deg, #7C3AED, #DB2777)" }}
+                  style={{ background: "linear-gradient(135deg, #C9A227, #E8C84A)" }}
                 >
-                  <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-6 h-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
                       d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                   </svg>
                 </div>
                 <div
                   className="font-sans text-[9px] font-semibold tracking-[0.35em] uppercase mb-0.5"
-                  style={{ color: "#7C3AED" }}
+                  style={{ color: "#C9A227" }}
                 >
                   Programa
                 </div>
                 <div
                   className="font-display font-black text-2xl tracking-[0.12em]"
-                  style={{ color: "#2E1065" }}
+                  style={{ color: "#111111" }}
                 >
                   ALIADAS
                 </div>
@@ -125,13 +125,13 @@ export default function Certificacao() {
               <div className="text-center">
                 <p className="font-sans text-[11px] text-gray-400 mb-3">Certificamos que</p>
 
-                <div className="h-px mb-3" style={{ background: "linear-gradient(to right, transparent, #DDD6FE, transparent)" }} />
+                <div className="h-px mb-3" style={{ background: "linear-gradient(to right, transparent, #E8D5A0, transparent)" }} />
 
-                <p className="font-display font-semibold text-xl" style={{ color: "#4C1D95" }}>
+                <p className="font-display font-semibold text-xl" style={{ color: "#111111" }}>
                   Seu Nome Aqui
                 </p>
 
-                <div className="h-px mt-3 mb-4" style={{ background: "linear-gradient(to right, transparent, #DDD6FE, transparent)" }} />
+                <div className="h-px mt-3 mb-4" style={{ background: "linear-gradient(to right, transparent, #E8D5A0, transparent)" }} />
 
                 <p className="font-sans text-[11px] leading-relaxed text-gray-400">
                   concluiu com êxito todos os módulos do programa Aliadas, tornando-se
@@ -140,17 +140,17 @@ export default function Certificacao() {
               </div>
 
               {/* Footer */}
-              <div className="flex justify-between items-end mt-7 pt-5" style={{ borderTop: "1px solid #F3F0FF" }}>
+              <div className="flex justify-between items-end mt-7 pt-5" style={{ borderTop: "1px solid #F5F5F5" }}>
                 <div>
                   <div className="w-24 h-px bg-gray-300 mb-1.5" />
                   <p className="font-sans text-[10px] text-gray-400">Dra. Lia Valechi</p>
-                  <p className="font-sans text-[9px]" style={{ color: "#C4B5FD" }}>Delegada de Polícia · MG</p>
+                  <p className="font-sans text-[9px]" style={{ color: "#C9A227" }}>Delegada de Polícia · MG</p>
                 </div>
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center"
-                  style={{ background: "linear-gradient(135deg, rgba(124,58,237,0.12), rgba(219,39,119,0.12))", border: "1px solid #DDD6FE" }}
+                  style={{ background: "rgba(201,162,39,0.1)", border: "1px solid #E8D5A0" }}
                 >
-                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" strokeWidth={1.5}>
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#C9A227" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
                   </svg>
                 </div>
@@ -171,13 +171,13 @@ export default function Certificacao() {
           >
             <h3
               className="font-display font-bold text-2xl mb-2"
-              style={{ color: "#2E1065" }}
+              style={{ color: "#111111" }}
             >
               O que significa ser uma Aliada?
             </h3>
             <p
               className="font-sans text-base leading-relaxed mb-8"
-              style={{ color: "rgba(91,33,182,0.68)" }}
+              style={{ color: "#555555" }}
             >
               Ao concluir todos os módulos, você recebe muito mais do que um certificado.
               Você entra para uma rede ativa de mulheres comprometidas com a mudança.
@@ -195,22 +195,22 @@ export default function Certificacao() {
                 >
                   <div
                     className="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5"
-                    style={{ background: "linear-gradient(135deg, #7C3AED, #DB2777)" }}
+                    style={{ background: "linear-gradient(135deg, #C9A227, #E8C84A)" }}
                   >
-                    <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-3.5 h-3.5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div>
                     <div
                       className="font-sans font-semibold text-sm mb-0.5"
-                      style={{ color: "#2E1065" }}
+                      style={{ color: "#111111" }}
                     >
                       {b.title}
                     </div>
                     <div
                       className="font-sans text-sm leading-relaxed"
-                      style={{ color: "rgba(91,33,182,0.62)" }}
+                      style={{ color: "#555555" }}
                     >
                       {b.desc}
                     </div>

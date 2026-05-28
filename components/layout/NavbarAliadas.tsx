@@ -22,14 +22,10 @@ export default function NavbarAliadas() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-30 transition-all duration-300 ${
-        scrolled
-          ? "backdrop-blur-md shadow-lg"
-          : ""
+        scrolled ? "backdrop-blur-md shadow-lg" : ""
       }`}
       style={{
-        background: scrolled
-          ? "rgba(18,7,41,0.92)"
-          : "transparent",
+        background: scrolled ? "rgba(10,10,10,0.95)" : "transparent",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,9 +35,9 @@ export default function NavbarAliadas() {
           <Link href="/" className="flex items-center gap-3 group">
             <div
               className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
-              style={{ background: "linear-gradient(135deg, #7C3AED, #DB2777)" }}
+              style={{ background: "linear-gradient(135deg, #C9A227, #E8C84A)" }}
             >
-              <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                   d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
@@ -50,7 +46,7 @@ export default function NavbarAliadas() {
               <span
                 className="block font-display font-black text-base tracking-wider"
                 style={{
-                  background: "linear-gradient(135deg, #C4B5FD, #F472B6)",
+                  background: "linear-gradient(135deg, #C9A227, #E8C84A)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -81,10 +77,11 @@ export default function NavbarAliadas() {
           <div className="flex items-center gap-3">
             <a
               href="#inscricao"
-              className="hidden sm:inline-flex items-center px-5 py-2.5 rounded-lg font-sans font-semibold text-sm text-white transition-all duration-200 hover:scale-[1.03] active:scale-[0.97]"
+              className="hidden sm:inline-flex items-center px-5 py-2.5 rounded-lg font-sans font-semibold text-sm transition-all duration-200 hover:scale-[1.03] active:scale-[0.97]"
               style={{
-                background: "linear-gradient(135deg, #7C3AED, #DB2777)",
-                boxShadow: "0 0 24px rgba(124,58,237,0.35)",
+                background: "linear-gradient(135deg, #C9A227, #E8C84A)",
+                color: "#111111",
+                boxShadow: "0 0 24px rgba(201,162,39,0.35)",
               }}
             >
               Inscreva-se
@@ -111,7 +108,7 @@ export default function NavbarAliadas() {
         {menuOpen && (
           <div
             className="md:hidden border-t border-white/10 py-4 flex flex-col gap-1"
-            style={{ background: "rgba(18,7,41,0.98)" }}
+            style={{ background: "rgba(10,10,10,0.98)" }}
           >
             {navLinks.map((link) => (
               <a
@@ -126,8 +123,8 @@ export default function NavbarAliadas() {
             <a
               href="#inscricao"
               onClick={() => setMenuOpen(false)}
-              className="mt-3 mx-4 text-center py-3 rounded-lg font-sans font-semibold text-white text-sm"
-              style={{ background: "linear-gradient(135deg, #7C3AED, #DB2777)" }}
+              className="mt-3 mx-4 text-center py-3 rounded-lg font-sans font-semibold text-sm"
+              style={{ background: "linear-gradient(135deg, #C9A227, #E8C84A)", color: "#111111" }}
             >
               Inscreva-se Gratuitamente
             </a>

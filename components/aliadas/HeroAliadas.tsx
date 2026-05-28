@@ -24,16 +24,16 @@ export default function HeroAliadas() {
   return (
     <section
       className="relative min-h-screen flex items-center overflow-hidden"
-      style={{ background: "#120729" }}
+      style={{ background: "#0D0D0D" }}
     >
-      {/* Gradient orbs */}
+      {/* Ambient glow */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div
           className="absolute w-[700px] h-[700px] rounded-full"
           style={{
             top: "-5%",
             right: "-15%",
-            background: "radial-gradient(circle, rgba(109,40,217,0.5) 0%, transparent 65%)",
+            background: "radial-gradient(circle, rgba(201,162,39,0.1) 0%, transparent 65%)",
             filter: "blur(56px)",
           }}
         />
@@ -42,17 +42,8 @@ export default function HeroAliadas() {
           style={{
             bottom: "-5%",
             left: "-8%",
-            background: "radial-gradient(circle, rgba(219,39,119,0.32) 0%, transparent 65%)",
+            background: "radial-gradient(circle, rgba(201,162,39,0.06) 0%, transparent 65%)",
             filter: "blur(56px)",
-          }}
-        />
-        <div
-          className="absolute w-[400px] h-[400px] rounded-full"
-          style={{
-            top: "55%",
-            left: "45%",
-            background: "radial-gradient(circle, rgba(139,92,246,0.28) 0%, transparent 65%)",
-            filter: "blur(64px)",
           }}
         />
       </div>
@@ -83,8 +74,8 @@ export default function HeroAliadas() {
             {/* Badge */}
             <motion.div variants={item} className="mb-8">
               <span className="inline-flex items-center gap-2.5 border border-white/10 rounded-full px-5 py-2 bg-white/[0.06]">
-                <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
-                <span className="text-violet-300 text-xs font-sans font-medium tracking-[0.18em] uppercase">
+                <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "#C9A227" }} />
+                <span className="text-xs font-sans font-medium tracking-[0.18em] uppercase" style={{ color: "#C9A227" }}>
                   Programa da Dra. Lia Valechi
                 </span>
               </span>
@@ -99,7 +90,7 @@ export default function HeroAliadas() {
               Seja Uma{" "}
               <span
                 style={{
-                  background: "linear-gradient(135deg, #C4B5FD 0%, #F472B6 100%)",
+                  background: "linear-gradient(135deg, #C9A227 0%, #E8C84A 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -127,7 +118,8 @@ export default function HeroAliadas() {
                 className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl font-sans font-semibold text-white text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
                 style={{
                   background: "linear-gradient(135deg, #7C3AED 0%, #DB2777 100%)",
-                  boxShadow: "0 0 52px rgba(124,58,237,0.48), 0 4px 20px rgba(219,39,119,0.28)",
+                  border: "1.5px solid #C9A227",
+                  boxShadow: "0 0 40px rgba(124,58,237,0.3), 0 4px 20px rgba(201,162,39,0.15)",
                 }}
               >
                 Inscreva-se Gratuitamente
@@ -165,7 +157,7 @@ export default function HeroAliadas() {
       {/* Bottom fade */}
       <div
         className="absolute bottom-0 left-0 right-0 h-48 pointer-events-none"
-        style={{ background: "linear-gradient(to bottom, transparent, rgba(18,7,41,0.7))" }}
+        style={{ background: "linear-gradient(to bottom, transparent, rgba(13,13,13,0.7))" }}
         aria-hidden="true"
       />
 
