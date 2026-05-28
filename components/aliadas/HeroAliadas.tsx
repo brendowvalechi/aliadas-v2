@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 const container = {
@@ -68,7 +69,9 @@ export default function HeroAliadas() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 pt-36 w-full">
-        <div className="max-w-3xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+
+          {/* Text content */}
           <motion.div variants={container} initial="hidden" animate="show">
 
             {/* Badge */}
@@ -85,7 +88,7 @@ export default function HeroAliadas() {
             <motion.h1
               variants={item}
               className="font-display font-bold text-white leading-[1.04] mb-8"
-              style={{ fontSize: "clamp(3.5rem, 8.5vw, 7.5rem)" }}
+              style={{ fontSize: "clamp(3rem, 6.5vw, 6.5rem)" }}
             >
               Seja Uma{" "}
               <span
@@ -103,8 +106,8 @@ export default function HeroAliadas() {
             {/* Description */}
             <motion.p
               variants={item}
-              className="text-white/60 font-sans leading-relaxed mb-10 max-w-2xl"
-              style={{ fontSize: "clamp(1rem, 2vw, 1.2rem)" }}
+              className="text-white/60 font-sans leading-relaxed mb-10 max-w-xl"
+              style={{ fontSize: "clamp(1rem, 1.6vw, 1.15rem)" }}
             >
               Um programa gratuito de capacitação criado pela Delegada Lia Valechi.
               Aprenda a reconhecer a violência doméstica e se torne uma multiplicadora
@@ -151,6 +154,35 @@ export default function HeroAliadas() {
             </motion.div>
 
           </motion.div>
+
+          {/* Logo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.85, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
+            className="flex items-center justify-center"
+          >
+            <div className="relative">
+              {/* Glow behind logo */}
+              <div
+                className="absolute inset-0 rounded-full pointer-events-none"
+                style={{
+                  background: "radial-gradient(circle, rgba(201,162,39,0.25) 0%, transparent 70%)",
+                  filter: "blur(40px)",
+                  transform: "scale(1.3)",
+                }}
+              />
+              <Image
+                src="/logo-aliadas.png"
+                alt="Logo Aliadas Contra a Violência"
+                width={480}
+                height={360}
+                className="relative z-10 w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[480px] drop-shadow-2xl"
+                priority
+              />
+            </div>
+          </motion.div>
+
         </div>
       </div>
 
