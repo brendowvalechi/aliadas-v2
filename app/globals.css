@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-playfair), "Playfair Display", serif;
+  --font-sans: var(--font-dm-sans), "DM Sans", sans-serif;
+}
+
+:root {
+  --background: #120729;
+  --foreground: #F5F3FF;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #7C3AED;
+  color: #F5F3FF;
+}
+
+:focus-visible {
+  outline: 2px solid #A78BFA;
+  outline-offset: 2px;
+}
