@@ -1,3 +1,5 @@
+"use client";
+
 export default function FooterAliadas() {
   return (
     <footer style={{ background: "#0A0318" }}>
