@@ -2,7 +2,7 @@
 
 export default function FooterAliadas() {
   return (
-    <footer style={{ background: "#0A0318" }}>
+    <footer style={{ background: "#0D0D0D" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
 
@@ -11,9 +11,9 @@ export default function FooterAliadas() {
             <div className="flex items-center gap-3 mb-4">
               <div
                 className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
-                style={{ background: "linear-gradient(135deg, #7C3AED, #DB2777)" }}
+                style={{ background: "linear-gradient(135deg, #C9A227, #E8C84A)" }}
               >
-                <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                     d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
@@ -21,7 +21,7 @@ export default function FooterAliadas() {
               <span
                 className="font-display font-black text-lg tracking-wider"
                 style={{
-                  background: "linear-gradient(135deg, #C4B5FD, #F472B6)",
+                  background: "linear-gradient(135deg, #C9A227, #E8C84A)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -53,7 +53,7 @@ export default function FooterAliadas() {
                     href={link.href}
                     className="font-sans text-sm transition-colors duration-200"
                     style={{ color: "rgba(255,255,255,0.45)" }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = "rgba(196,181,253,1)")}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = "#C9A227")}
                     onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.45)")}
                   >
                     {link.label}
@@ -73,8 +73,8 @@ export default function FooterAliadas() {
             </p>
             <a
               href="#inscricao"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-sans font-semibold text-sm text-white transition-all duration-200 hover:scale-[1.03]"
-              style={{ background: "linear-gradient(135deg, #7C3AED, #DB2777)" }}
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-sans font-semibold text-sm transition-all duration-200 hover:scale-[1.03]"
+              style={{ background: "linear-gradient(135deg, #C9A227, #E8C84A)", color: "#111111" }}
             >
               Quero ser Aliada
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

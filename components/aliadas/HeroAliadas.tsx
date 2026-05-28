@@ -115,11 +115,11 @@ export default function HeroAliadas() {
             <motion.div variants={item} className="flex flex-wrap gap-4 mb-16">
               <Link
                 href="#inscricao"
-                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl font-sans font-semibold text-white text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl font-sans font-semibold text-base transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
                 style={{
-                  background: "linear-gradient(135deg, #7C3AED 0%, #DB2777 100%)",
-                  border: "1.5px solid #C9A227",
-                  boxShadow: "0 0 40px rgba(124,58,237,0.3), 0 4px 20px rgba(201,162,39,0.15)",
+                  background: "linear-gradient(135deg, #C9A227 0%, #E8C84A 100%)",
+                  color: "#111111",
+                  boxShadow: "0 0 48px rgba(201,162,39,0.4), 0 4px 20px rgba(201,162,39,0.2)",
                 }}
               >
                 Inscreva-se Gratuitamente

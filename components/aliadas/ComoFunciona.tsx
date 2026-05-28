@@ -108,11 +108,11 @@ export default function ComoFunciona() {
               </div>
 
               <div
-                className="relative z-10 w-28 h-28 rounded-full flex items-center justify-center mb-6 text-white"
+                className="relative z-10 w-28 h-28 rounded-full flex items-center justify-center mb-6"
                 style={{
-                  background: "linear-gradient(135deg, #7C3AED 0%, #DB2777 100%)",
-                  border: "2.5px solid #C9A227",
-                  boxShadow: "0 8px 36px rgba(201,162,39,0.2)",
+                  background: "linear-gradient(135deg, #C9A227 0%, #E8C84A 100%)",
+                  color: "#111111",
+                  boxShadow: "0 8px 36px rgba(201,162,39,0.3)",
                 }}
               >
                 {step.icon}

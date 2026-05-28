@@ -154,13 +154,13 @@ export default function SobrePrograma() {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.08, duration: 0.5 }}
                   className="bg-white rounded-xl p-4 shadow-sm"
-                  style={{ border: "1px solid #EDE9FE" }}
+                  style={{ border: "1px solid #E5E5E5" }}
                 >
-                  <div className="w-9 h-9 rounded-lg flex items-center justify-center mb-3 text-white" style={{ background: "linear-gradient(135deg, #7C3AED, #DB2777)" }}>
+                  <div className="w-9 h-9 rounded-lg flex items-center justify-center mb-3" style={{ background: "linear-gradient(135deg, #C9A227, #E8C84A)", color: "#111111" }}>
                     {f.icon}
                   </div>
-                  <div className="font-sans font-semibold text-sm mb-0.5" style={{ color: "#2E1065" }}>{f.title}</div>
-                  <div className="font-sans text-xs leading-relaxed" style={{ color: "rgba(109,40,217,0.65)" }}>{f.desc}</div>
+                  <div className="font-sans font-semibold text-sm mb-0.5" style={{ color: "#111111" }}>{f.title}</div>
+                  <div className="font-sans text-xs leading-relaxed" style={{ color: "#888888" }}>{f.desc}</div>
                 </motion.div>
               ))}
             </div>
